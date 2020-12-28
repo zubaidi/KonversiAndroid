@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Konversi Yuk!</string>
+    <string-array name="waktu">
+        <item>HARI</item>
+        <item>JAM</item>
+        <item>MENIT</item>
+        <item>DETIK</item>
+    </string-array>
+    <string-array name="Suhu">
+        <item>HARI</item>
+        <item>JAM</item>
+        <item>MENIT</item>
+        <item>DETIK</item>
+    </string-array>
+</resources>

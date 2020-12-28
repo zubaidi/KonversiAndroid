@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5C67A"
+    tools:context=".KonversiWaktu" >
+
+    <EditText
+        android:id="@+id/editHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_style"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:inputType="number"
+        android:padding="10dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/spWaktu"
+        app:layout_constraintStart_toStartOf="@+id/spWaktu"
+        app:layout_constraintTop_toBottomOf="@+id/spWaktu" />
+
+    <Button
+        android:id="@+id/btnKonvertWaktu"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="sans-serif-medium"
+        android:text="KONVERSI"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/spWaktuHasil"
+        app:layout_constraintStart_toStartOf="@+id/spWaktuHasil"
+        app:layout_constraintTop_toBottomOf="@+id/spWaktuHasil" />
+
+    <EditText
+        android:id="@+id/editInput"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_style"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spWaktu"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:background="#090101"
+        android:scrollbarSize="20dp"
+        android:spinnerMode="dropdown"
+        android:entries="@array/waktu"
+        app:layout_constraintEnd_toEndOf="@+id/editInput"
+        app:layout_constraintStart_toStartOf="@+id/editInput"
+        app:layout_constraintTop_toBottomOf="@+id/editInput" />
+
+    <Spinner
+        android:id="@+id/spWaktuHasil"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:background="#090101"
+        android:entries="@array/waktu"
+        android:scrollbarSize="20dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@+id/editHasil"
+        app:layout_constraintStart_toStartOf="@+id/editHasil"
+        app:layout_constraintTop_toBottomOf="@+id/editHasil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
